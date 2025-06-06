@@ -49,7 +49,8 @@ src/
     useClickOutside.ts
   data/
     mockData.ts
-    realAPI.ts
+  services/
+    userService.ts
   types/
     User.d.ts
 ```
@@ -60,8 +61,8 @@ In `App.tsx`, you can toggle between using a local mocked dataset or a real API:
 
 ```ts
 // For mock data:
-import { fetchUsersMock } from "@/data/mockData";
+import { fetchUsersMock } from './data/mockData'
 
 // For real API:
-import { fetchUsersReal } from "@/data/realAPI";
+import { fetchUsers } from './services/userService'
 ```
